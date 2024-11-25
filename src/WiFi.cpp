@@ -83,8 +83,8 @@ void firebase::clearOrder()
     Serial.println("Order cleared!");
   }else
   {
-    Serial.println("clearOrder");
-    Serial.print("ERROR : ");
+    Serial.println("Failed to clearOrder");
+    Serial.print("Error code : ");
     Serial.println(fbdo.errorReason());
   }
 }
@@ -96,7 +96,7 @@ void firebase::setDoorStatus(bool status)
   else 
   {
     Serial.println("Failed to update door status");
-    Serial.print("ERROR: ");
+    Serial.print("Error code : ");
     Serial.println(fbdo.errorReason());
   }
 }

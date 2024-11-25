@@ -7,8 +7,7 @@ enum doorOrder: uint8_t{
 };
 
 Door::Door(L298N& motor, HC_SR04& ultrasonic, uint16_t travel)
-    : motorDriver(motor), ultrasonic(ultrasonic), travelDistance(travel),
-      carUnder(false)
+    : motorDriver(motor), ultrasonic(ultrasonic), travelDistance(travel)
 {
 
 }

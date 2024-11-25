@@ -12,7 +12,6 @@ private:
     L298N& motorDriver;
     HC_SR04& ultrasonic;
     uint16_t travelDistance;
-    bool carUnder;
     void slideUp();
     void slideDown(uint16_t slideTime = 4100);
     void stop();
